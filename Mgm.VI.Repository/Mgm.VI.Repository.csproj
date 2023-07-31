@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AutoMapperBootstrapper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Common\Mgm.VI.Common.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Dto\Mgm.VI.Data.Dto.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Map\Mgm.VI.Data.Map.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Model\Mgm.VI.Data.Model.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Repository._Interfaces\Mgm.VI.Repository._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

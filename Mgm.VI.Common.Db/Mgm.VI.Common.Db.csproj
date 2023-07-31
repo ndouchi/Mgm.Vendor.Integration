@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Custom\**" />
+    <EmbeddedResource Remove="Custom\**" />
+    <None Remove="Custom\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="XsdValidator2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Common.Db._Interfaces\Mgm.VI.Common.Db._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>Mgm.VI.Services._Interfaces</AssemblyName>
+    <RootNamespace>Mgm.VI.Services</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Mgm.VI.Common\Mgm.VI.Common.csproj" />
+  </ItemGroup>
+
+</Project>

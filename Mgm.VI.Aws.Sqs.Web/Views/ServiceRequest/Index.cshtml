@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Mgm.VI.Aws.Sqs.Models.ServiceRequestModel>
+
+@{
+    ViewData["Title"] = "Service Requests";
+}
+
+<h2>Index</h2>
+<p>
+    <a asp-action="Create">Submit a Service Request</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ServiceRequest)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ServiceRequest)
+                </td>
+                <td>
+                    @Html.ActionLink("View Subitted Service Requests", "ServiceRequests", "ServiceRequest", new { url = item.VendorId }, htmlAttributes: null)
+                    @Html.ActionLink("Submit a Service Request", "Submit", "ServiceRequest", new { ServiceRequest = item.ServiceRequest }, htmlAttributes: null)
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ServiceRequestOrder.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Aws.Sqs.Dto\Mgm.VI.Aws.Sqs.Dto.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Aws.Sqs.Rules\Mgm.VI.Aws.Sqs.Rules.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Aws.Sqs\Mgm.VI.Aws.Sqs.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Repository\Mgm.VI.Repository.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Aws.Sqs.Rules._Interfaces\Mgm.VI.Aws.Sqs.Rules._Interfaces.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Business._Interfaces\Mgm.VI.Business._Interfaces.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Logger._Interfaces\Mgm.VI.Logger._Interfaces.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Common._Interfaces\Mgm.VI.Common._Interfaces.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Aws._Interfaces\Mgm.VI.Aws._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Common\Mgm.VI.Common.csproj" />
+  </ItemGroup>
+
+</Project>

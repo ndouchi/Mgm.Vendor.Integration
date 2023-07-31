@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <RootNamespace>Mgm.VI.Notification</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AutoMapperBootstrapper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Common._Interfaces\Mgm.VI.Common._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Dto._Interfaces\Mgm.VI.Data.Dto._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Map._Interfaces\Mgm.VI.Data.Map._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Model._Interfaces\Mgm.VI.Data.Model._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

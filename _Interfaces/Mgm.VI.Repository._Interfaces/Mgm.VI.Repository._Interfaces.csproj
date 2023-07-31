@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+    <RootNamespace>Mgm.VI.Repository</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AutoMapperBootstrapper.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Data.Dto._Interfaces\Mgm.VI.Data.Dto._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

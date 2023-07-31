@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Common\Mgm.VI.Common.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Data.Dto._Interfaces\Mgm.VI.Data.Dto._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

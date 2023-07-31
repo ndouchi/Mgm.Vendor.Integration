@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Menu>
+	<SubMenus>
+		<Menu name="SubMenu 1">
+			<SubMenus>
+				<Menu name="Sub-SubMenu 1">
+					<MenuItems>
+						<MenuItem name="Menu Item 1-1-1" action="Action1.exe" />
+						<MenuItem name="Menu Item 1-1-2" action="Action2.exe" parameters="-2" />
+					</MenuItems>
+				</Menu>
+				<Menu name="Sub-SubMenu 2">
+					<MenuItems>
+						<MenuItem name="Menu Item 1-2-1" action="Action3.exe" />
+						<MenuItem name="Menu Item 1-2-2" action="Action4.exe" parameters="-2" />
+					</MenuItems>
+				</Menu>
+			</SubMenus>
+		</Menu>
+		<Menu name="Sub Menu 2">
+			<MenuItems>
+				<MenuItem name="Menu Item 2-1" action="Action5.exe" parameters="-item 2.1" />
+			</MenuItems>
+		</Menu>
+	</SubMenus>
+	<MenuItems>
+		<MenuItem name="Menu Item 1" action="Action6.exe"/>
+		<MenuItem name="Menu Item 2" action="Action7.exe" parameters="" />
+	</MenuItems>
+</Menu>

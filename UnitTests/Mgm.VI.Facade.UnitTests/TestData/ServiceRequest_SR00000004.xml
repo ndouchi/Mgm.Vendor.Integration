@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ServiceRequest ID="SR00000004" Description="OSN Features" TransactionType="Add" ServicingStatus="Completed"  RushOrder="Y" DueDate="07/01/2019" BusinessPartnerID="GULFDT" BusinessPartner="GULF DTH FZ LLC" ProfileID="PR00000489" ProfileDescription="Sky Italia SRL (ID# 2171) - Italy - Deluxe" FastTrack="N"  CreatedDate="06/20/2019" CreatedBy="Dpalmer" CompletedDate="07/08/2019">
+  <Contracts>
+  <Contract ID="00E1600015"  Description="M.East- PTV, PTV2, PSOD- Output" ServicingStatus="Completed">
+  <Titles>
+    <Title ID="ANNIEHAL" Description="ANNIE HALL"  ServicingStatus="Completed" IPMStatus="Finalized" ContractualDueDate="09/18/2018" LicenseStartDate="09/18/2018" EOPResource="NR" PPSResource="ALashley">
+    <LineItems>
+      <LineItem ID="0000011750" ServicingStatus="Completed" IPMMedia="IS-PSOD-CU, IS-PSOD-SA, IS-PTV, TV-PSOD-CU, TV-PTV" IPMTerritory="AFGHAN, CHAD, DJIBOU, MAUITA, SOMALI, SSUDAN" IPMLanguage="ARA, FAS, INHIN, INURD" LicenseStart="08/01/2019" LicenseEnd="07/31/2020">
+      <Orders>
+        <Order ID="1" ServicingStatus="Completed" Version="TheatricalVersion">
+          <SRDueDate>07/01/2019</SRDueDate>
+          <EmbargoDate></EmbargoDate>
+          <PrimaryVideo>Y</PrimaryVideo>
+          <SecondaryAudio>French Parisian, Music And Effects</SecondaryAudio>
+          <SubtitlesFull>Arabic, English, French Parisian</SubtitlesFull>
+          <SubtitlesForced> French Parisian</SubtitlesForced>
+          <ClosedCaptions></ClosedCaptions>
+          <Trailer></Trailer>
+          <RebillType>Rebill A</RebillType>
+          <Amount></Amount>
+          <MetaData></MetaData>
+          <ArtWork></ArtWork>          
+          <Document></Document>
+          <EOPPO></EOPPO>
+          <EOPDueDate></EOPDueDate>
+          <EOPStatus>Not Required</EOPStatus>
+          <EOPResource></EOPResource>
+          <EOPNotes></EOPNotes>
+          <PPSPO>4865863</PPSPO>
+          <PPSDueDate>07/01/2019</PPSDueDate>
+          <PPSStatus>Completed</PPSStatus>
+          <PPSResource></PPSResource>
+          <PPSNotes></PPSNotes>
+          <MaterialNotes>HD feature file naming conventions should follow the below template: BM-DF-MVXXXXXX.mxf HD trailer filenaming conventions should follow the below template: BR-DF-MVXXXXXX.mxf SD feature file naming conventions should follow the below template: FM-DF-MVXXXXXX.mxf SD trailer filenaming conventions should follow the below template: FR-DF-MVXXXXXX.mxf Here are the individual unique ID #s for each title:  ANNIE HALL MV012999 BLOW OUT MV013001 HOME OF OUR OWN, A MV013000 </MaterialNotes>
+          <Other></Other>
+          <IPMMedia></IPMMedia>
+          <Rejections>
+          <Rejection ID="" CurrentStatus="" Asset="" RejectionCode="" Issue="" CommentsHistory=""  RejectedBy="" RejectionDate="" Urgency="" RootCause="" Document=""></Rejection>
+          <Redelivered ID="" CurrentStatus="" Asset="" RejectionCode="" Issue="" CommentsHistory=""  RejectedBy="" RejectionDate="" Urgency="" RootCause="" Document=""></Redelivered>
+          <Resolved ID="" CurrentStatus="" Asset="" RejectionCode="" Issue="" CommentsHistory=""  RejectedBy="" RejectionDate="" Urgency="" RootCause="" Document=""></Resolved>           
+          </Rejections>         
+        </Order>
+        <Order ID="2" ServicingStatus="Completed" Version="BroadCast">
+          <SRDueDate>07/01/2019</SRDueDate>
+          <EmbargoDate></EmbargoDate>
+          <PrimaryVideo>Y</PrimaryVideo>
+          <SecondaryAudio>French Parisian, Music And Effects</SecondaryAudio>
+          <SubtitlesFull>Arabic, English, French Parisian</SubtitlesFull>
+          <SubtitlesForced> French Parisian</SubtitlesForced>
+          <ClosedCaptions></ClosedCaptions>
+          <Trailer></Trailer>
+          <RebillType>Rebill A</RebillType>
+          <Amount></Amount>
+          <MetaData></MetaData>
+          <ArtWork></ArtWork>
+          <Document></Document>
+          <EOPPO></EOPPO>
+          <EOPDueDate></EOPDueDate>
+          <EOPStatus>Not Required</EOPStatus>
+          <EOPResource></EOPResource>
+          <EOPNotes></EOPNotes>
+          <PPSPO>4865863</PPSPO>
+          <PPSDueDate>07/01/2019</PPSDueDate>
+          <PPSStatus>Completed</PPSStatus>
+          <PPSResource></PPSResource>
+          <PPSNotes></PPSNotes>
+          <MaterialNotes>HD feature file naming conventions should follow the below template: BM-DF-MVXXXXXX.mxf HD trailer filenaming conventions should follow the below template: BR-DF-MVXXXXXX.mxf SD feature file naming conventions should follow the below template: FM-DF-MVXXXXXX.mxf SD trailer filenaming conventions should follow the below template: FR-DF-MVXXXXXX.mxf Here are the individual unique ID #s for each title:  ANNIE HALL MV012999 BLOW OUT MV013001 HOME OF OUR OWN, A MV013000 </MaterialNotes>
+          <Other></Other>
+          <IPMMedia></IPMMedia>
+          <Rejections>
+            <Rejection ID="" CurrentStatus="" Asset="" RejectionCode="" Issue="" CommentsHistory=""  RejectedBy="" RejectionDate="" Urgency="" RootCause="" Document=""></Rejection>
+            <Redelivered ID="" CurrentStatus="" Asset="" RejectionCode="" Issue="" CommentsHistory=""  RejectedBy="" RejectionDate="" Urgency="" RootCause="" Document=""></Redelivered>
+            <Resolved ID="" CurrentStatus="" Asset="" RejectionCode="" Issue="" CommentsHistory=""  RejectedBy="" RejectionDate="" Urgency="" RootCause="" Document=""></Resolved>
+          </Rejections>
+        </Order>
+      </Orders>
+      </LineItem>
+    </LineItems>
+    </Title>
+  </Titles>
+    </Contract>
+  </Contracts>
+</ServiceRequest>

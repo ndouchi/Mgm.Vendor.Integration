@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>Mgm.VI.Business</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SQS" Version="3.3.102.60" />
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Aws.Sqs.Dto._Interfaces\Mgm.VI.Aws.Sqs.Dto._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Aws.Sqs.Rules._Interfaces\Mgm.VI.Aws.Sqs.Rules._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Aws._Interfaces\Mgm.VI.Aws._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Common._Interfaces\Mgm.VI.Common._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Dto._Interfaces\Mgm.VI.Data.Dto._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Logger._Interfaces\Mgm.VI.Logger._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

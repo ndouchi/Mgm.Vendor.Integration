@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+  <xs:element name="ServiceRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Contracts">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Contract">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Titles">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Title">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="LineItems">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="LineItem">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="Orders">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="Order" maxOccurs="unbounded">
+                                                    <xs:complexType>
+                                                      <xs:sequence>
+                                                        <xs:element name="VendorId" type="xs:string"></xs:element>
+                                                        <xs:element name="SourceMioAssetId" type="xs:string"></xs:element>
+                                                        <xs:element name="ShellMioAssetId" type="xs:string"></xs:element>
+                                                        <xs:element name="SRDueDate" type="xs:string"></xs:element>
+                                                        <xs:element name="EmbargoDate"></xs:element>
+                                                        <xs:element name="PrimaryVideo" type="xs:string"></xs:element>
+                                                        <xs:element name="SecondaryAudio" type="xs:string"></xs:element>
+                                                        <xs:element name="SubtitlesFull" type="xs:string"></xs:element>
+                                                        <xs:element name="SubtitlesForced" type="xs:string"></xs:element>
+                                                        <xs:element name="ClosedCaptions"></xs:element>
+                                                        <xs:element name="Trailer"></xs:element>
+                                                        <xs:element name="RebillType" type="xs:string"></xs:element>
+                                                        <xs:element name="Amount"></xs:element>
+                                                        <xs:element name="MetaData"></xs:element>
+                                                        <xs:element name="ArtWork"></xs:element>
+                                                        <xs:element name="Document"></xs:element>
+                                                        <xs:element name="EOPPO"></xs:element>
+                                                        <xs:element name="EOPDueDate"></xs:element>
+                                                        <xs:element name="EOPStatus" type="xs:string"></xs:element>
+                                                        <xs:element name="EOPResource"></xs:element>
+                                                        <xs:element name="EOPNotes"></xs:element>
+                                                        <xs:element name="PPSPO" type="xs:int"></xs:element>
+                                                        <xs:element name="PPSDueDate" type="xs:string"></xs:element>
+                                                        <xs:element name="PPSStatus" type="xs:string"></xs:element>
+                                                        <xs:element name="PPSResource"></xs:element>
+                                                        <xs:element name="PPSNotes"></xs:element>
+                                                        <xs:element name="MaterialNotes" type="xs:string"></xs:element>
+                                                        <xs:element name="Other"></xs:element>
+                                                        <xs:element name="IPMMedia"></xs:element>
+                                                        <xs:element name="Rejections">
+                                                          <xs:complexType>
+                                                            <xs:sequence>
+                                                              <xs:element name="Rejection">
+                                                                <xs:complexType>
+                                                                  <xs:attribute name="ID" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="CurrentStatus" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Asset" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectionCode" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Issue" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="CommentsHistory" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectedBy" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectionDate" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Urgency" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RootCause" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Document" type="xs:string"></xs:attribute>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                              <xs:element name="Redelivered">
+                                                                <xs:complexType>
+                                                                  <xs:attribute name="ID" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="CurrentStatus" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Asset" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectionCode" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Issue" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="CommentsHistory" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectedBy" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectionDate" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Urgency" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RootCause" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Document" type="xs:string"></xs:attribute>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                              <xs:element name="Resolved">
+                                                                <xs:complexType>
+                                                                  <xs:attribute name="ID" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="CurrentStatus" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Asset" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectionCode" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Issue" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="CommentsHistory" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectedBy" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RejectionDate" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Urgency" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="RootCause" type="xs:string"></xs:attribute>
+                                                                  <xs:attribute name="Document" type="xs:string"></xs:attribute>
+                                                                </xs:complexType>
+                                                              </xs:element>
+                                                            </xs:sequence>
+                                                          </xs:complexType>
+                                                        </xs:element>
+                                                      </xs:sequence>
+                                                      <xs:attribute name="ID" type="xs:string"></xs:attribute>
+                                                      <xs:attribute name="ServicingStatus" type="xs:string"></xs:attribute>
+                                                      <xs:attribute name="Version" type="xs:string"></xs:attribute>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute name="ID" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="ServicingStatus" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="IPMMedia" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="IPMTerritory" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="IPMLanguage" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="LicenseStart" type="xs:string"></xs:attribute>
+                                          <xs:attribute name="LicenseEnd" type="xs:string"></xs:attribute>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="ID" type="xs:string"></xs:attribute>
+                              <xs:attribute name="Description" type="xs:string"></xs:attribute>
+                              <xs:attribute name="ServicingStatus" type="xs:string"></xs:attribute>
+                              <xs:attribute name="IPMStatus" type="xs:string"></xs:attribute>
+                              <xs:attribute name="ContractualDueDate" type="xs:string"></xs:attribute>
+                              <xs:attribute name="LicenseStartDate" type="xs:string"></xs:attribute>
+                              <xs:attribute name="EOPResource" type="xs:string"></xs:attribute>
+                              <xs:attribute name="PPSResource" type="xs:string"></xs:attribute>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="ID" type="xs:string"></xs:attribute>
+                  <xs:attribute name="Description" type="xs:string"></xs:attribute>
+                  <xs:attribute name="ServicingStatus" type="xs:string"></xs:attribute>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="ID" type="xs:string"></xs:attribute>
+      <xs:attribute name="Description" type="xs:string"></xs:attribute>
+      <xs:attribute name="TransactionType" type="xs:string"></xs:attribute>
+      <xs:attribute name="ServicingStatus" type="xs:string"></xs:attribute>
+      <xs:attribute name="RushOrder" type="xs:string"></xs:attribute>
+      <xs:attribute name="DueDate" type="xs:string"></xs:attribute>
+      <xs:attribute name="BusinessPartnerID" type="xs:string"></xs:attribute>
+      <xs:attribute name="BusinessPartner" type="xs:string"></xs:attribute>
+      <xs:attribute name="ProfileID" type="xs:string"></xs:attribute>
+      <xs:attribute name="ProfileDescription" type="xs:string"></xs:attribute>
+      <xs:attribute name="FastTrack" type="xs:string"></xs:attribute>
+      <xs:attribute name="CreatedDate" type="xs:string"></xs:attribute>
+      <xs:attribute name="CreatedBy" type="xs:string"></xs:attribute>
+      <xs:attribute name="CompletedDate" type="xs:string"></xs:attribute>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

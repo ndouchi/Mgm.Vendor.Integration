@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <RootNamespace>Mgm.VI.Aws.Sqs</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.SQS" Version="3.3.102.60" />
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Mgm.VI.Common\Mgm.VI.Common.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Aws.Sqs.Dto._Interfaces\Mgm.VI.Aws.Sqs.Dto._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Aws.Sqs.Rules._Interfaces\Mgm.VI.Aws.Sqs.Rules._Interfaces.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Aws._Interfaces\Mgm.VI.Aws._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

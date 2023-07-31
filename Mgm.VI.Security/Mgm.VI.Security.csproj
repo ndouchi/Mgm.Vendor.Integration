@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Custom\**" />
+    <EmbeddedResource Remove="Custom\**" />
+    <None Remove="Custom\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="XsdValidator2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="System.Security.Principal.Windows" Version="4.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Common\Mgm.VI.Common.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Security._Interfaces\Mgm.VI.Security._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

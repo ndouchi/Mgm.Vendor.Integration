@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Custom\**" />
+    <EmbeddedResource Remove="Custom\**" />
+    <None Remove="Custom\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="XsdValidator2.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Common._Interfaces\Mgm.VI.Common._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

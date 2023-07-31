@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Mgm.VI.Aws.Sqs.Models.MessageModel>
+
+@{
+    ViewData["Title"] = "Processed Messages";
+}
+
+<h2>Processed Messages</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Message)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.URL)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.URL)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="VendorDto.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="NETStandard.Library" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Mgm.VI.Aws\Mgm.VI.Aws.csproj" />
+    <ProjectReference Include="..\Mgm.VI.Data.Dto\Mgm.VI.Data.Dto.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Aws.Sqs.Dto._Interfaces\Mgm.VI.Aws.Sqs.Dto._Interfaces.csproj" />
+    <ProjectReference Include="..\_Interfaces\Mgm.VI.Aws._Interfaces\Mgm.VI.Aws._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>

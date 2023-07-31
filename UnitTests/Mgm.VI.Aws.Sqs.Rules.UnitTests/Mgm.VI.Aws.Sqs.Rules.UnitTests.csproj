@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.DependencyValidation.Analyzers" Version="0.10.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.2.0" />
+    <PackageReference Include="xunit" Version="2.4.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.0" />
+    <PackageReference Include="coverlet.collector" Version="1.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Mgm.VI.Aws.Sqs.Dto\Mgm.VI.Aws.Sqs.Dto.csproj" />
+    <ProjectReference Include="..\..\Mgm.VI.Aws.Sqs.Rules\Mgm.VI.Aws.Sqs.Rules.csproj" />
+    <ProjectReference Include="..\..\Mgm.VI.Aws.Sqs\Mgm.VI.Aws.Sqs.csproj" />
+    <ProjectReference Include="..\..\Mgm.VI.Common\Mgm.VI.Common.csproj" />
+    <ProjectReference Include="..\..\Mgm.VI.Logger\Mgm.VI.Logger.csproj" />
+    <ProjectReference Include="..\..\_Interfaces\Mgm.VI.Aws.Sqs.Rules._Interfaces\Mgm.VI.Aws.Sqs.Rules._Interfaces.csproj" />
+  </ItemGroup>
+
+</Project>
